@@ -1,16 +1,38 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@layer components {
+  ::-webkit-scrollbar {
+    @apply w-[10px];
+  }
 
-* {
-  box-sizing: border-box;
+  ::-webkit-scrollbar-track {
+    @apply bg-slate-300;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-red-500;
+  }
+
+  .hoverAnimation {
+    @apply hover:bg-gray-100 p-2 rounded-full hover:shadow-sm transition;
+  }
+  .card,
+  .category {
+    background-color: theme("colors.white");
+    border-radius: theme("borderRadius.lg");
+    padding: theme("spacing.3");
+    box-shadow: theme("boxShadow.xl");
+  }
+
+  .card:hover .textCategory {
+    @apply flex;
+  }
 }
