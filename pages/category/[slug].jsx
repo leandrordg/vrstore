@@ -2,19 +2,13 @@ import { useRouter } from "next/router";
 import { getCategories, getCategoryProduct } from "../../services";
 import { Loader, Newsletter, Pagination, Product } from "../../components";
 import { BsChevronRight } from "react-icons/bs";
-import { useEffect, useState } from "react";
 
 const CategoryProduct = ({ products }) => {
   const router = useRouter();
-  const [categories, setCategories] = useState([]);
 
   if (router.isFallback) {
     return <Loader />;
   }
-
-  useEffect(() => {
-    getCategories().then((newCategory) => setCategories(newCategory));
-  }, []);
 
   return (
     <>
