@@ -93,7 +93,7 @@ export const getRecentProducts = async () => {
   return result.products;
 };
 
-export const getSimilarProducts = async ({ categories, slug }) => {
+export const getSimilarProducts = async ({categories, slug}) => {
   const query = gql`
     query GetProductDetails($slug: String!, $categories: [String!]) {
       products(

@@ -74,18 +74,12 @@ const Description = ({ product }) => {
       </div>
       {showDesc && (
         <div className="desc space-y-4 pb-4 text-gray-600 text-justify">
-          {console.log(product.desc.raw)}
           {product.desc.raw.children.map((typeObj, index) => {
             const children = typeObj.children.map((item, itemIndex) =>
               getContentFragment(itemIndex, item.text, item)
             );
 
-            return getContentFragment(
-              index,
-              children,
-              typeObj,
-              typeObj.type
-            );
+            return getContentFragment(index, children, typeObj, typeObj.type);
           })}
         </div>
       )}
