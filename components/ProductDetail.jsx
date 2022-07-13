@@ -105,7 +105,6 @@ const ProductDetail = ({ product }) => {
             <img
               className="object-cover rounded-lg"
               src="https://escolhaideal.org/wp-content/uploads/2021/09/1600092710480.jpg"
-              alt=""
             />
           </div>
         </div>
