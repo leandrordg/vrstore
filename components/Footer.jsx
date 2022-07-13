@@ -53,12 +53,12 @@ const Footer = () => {
       <div className="since bg-slate-200 border-t-2">
         <div className="container mx-auto p-4 md:text-center flex items-center">
           <span>
-            SINCE 2022 &copy; <b>VR STORE</b>{" "}
+            DESDE 2022 &copy; <b>VR STORE</b>{" "}
           </span>
           <img
             className="w-8 h-8 object-contain ml-2"
             src="https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg"
-            alt=""
+            alt="Brazil Flag"
           />
         </div>
       </div>

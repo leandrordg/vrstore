@@ -48,7 +48,7 @@ const Comments = () => {
                   className="hover:bg-slate-200 rounded-full hover:shadow transition p-2 flex items-center space-x-2"
                 >
                   {likeButton ? (
-                    <BsHeartFill className="text-gray-500" />
+                    <BsHeartFill className="text-red-500" />
                   ) : (
                     <BsHeart className="text-gray-500" />
                   )}

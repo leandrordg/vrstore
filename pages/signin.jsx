@@ -8,7 +8,7 @@ const signin = () => {
   return (
     <>
       <div className="container mx-auto p-4 my-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 text-center md:text-left">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 text-center md:text-left lg:my-20">
           <div className="hidden lg:flex items-center justify-center">
             <img
               className="object-contain"
@@ -16,7 +16,7 @@ const signin = () => {
             />
           </div>
           <div className="flex flex-col space-y-4 my-4">
-            <div className="title">
+            <div>
               <h1 className="text-3xl">Entrar</h1>
               <p className="text-lg mb-2">
                 Faça login para comprar seus produtos favoritos!
